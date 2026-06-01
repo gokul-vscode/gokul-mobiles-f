@@ -1,6 +1,5 @@
 // import logo from './logo.svg';
 import './App.css';
-import HomePage from './Pages/HomePage'
 import Routing from './Routing/Routing';
 import { Provider } from 'react-redux'
 import store from './Store/store'

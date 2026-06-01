@@ -2,13 +2,13 @@ import React, { useState } from "react";
 
 import "./CheckoutPage.css";
 
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 
 import axios from "axios";
 
 function CheckoutPage() {
 
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   const cartItems = useSelector(
     (state) => state.cart.cartItems

@@ -9,7 +9,7 @@ import {
 } from "../../CartSlice/CartSlice";
 
 import { FaTrashAlt } from "react-icons/fa";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 function CartPage() {
