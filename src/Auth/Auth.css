@@ -1,0 +1,192 @@
+/* Auth.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background: #0F172A;
+}
+
+/* ===================== */
+/* PAGE */
+/* ===================== */
+
+.auth-page{
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background:
+  linear-gradient(
+    135deg,
+    #0F172A,
+    #111827
+  );
+
+  padding: 20px;
+}
+
+/* ===================== */
+/* BOX */
+/* ===================== */
+
+.auth-box{
+  width: 100%;
+  max-width: 420px;
+
+  background: #1E293B;
+
+  padding: 40px 30px;
+
+  border-radius: 20px;
+
+  box-shadow:
+  0 10px 40px rgba(0,0,0,0.4);
+}
+
+/* ===================== */
+/* TOP */
+/* ===================== */
+
+.auth-top{
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+.auth-top h1{
+  color: white;
+
+  font-size: 2rem;
+
+  margin-bottom: 10px;
+}
+
+.auth-top p{
+  color: #94A3B8;
+
+  font-size: 0.95rem;
+}
+
+/* ===================== */
+/* FORM */
+/* ===================== */
+
+.auth-form{
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+/* INPUT */
+
+.auth-form input{
+  width: 100%;
+  height: 55px;
+
+  border: none;
+  outline: none;
+
+  border-radius: 12px;
+
+  background: #0F172A;
+
+  padding: 0 18px;
+
+  color: white;
+
+  font-size: 0.95rem;
+
+  border: 1px solid transparent;
+
+  transition: 0.3s ease;
+}
+
+.auth-form input:focus{
+  border: 1px solid #3B82F6;
+}
+
+.auth-form input::placeholder{
+  color: #64748B;
+}
+
+/* BUTTON */
+
+.auth-form button{
+  width: 100%;
+  height: 55px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: #3B82F6;
+
+  color: white;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.auth-form button:hover{
+  background: #2563EB;
+}
+
+/* ===================== */
+/* SWITCH */
+/* ===================== */
+
+.switch-text{
+  margin-top: 25px;
+
+  text-align: center;
+
+  color: #CBD5E1;
+
+  font-size: 0.92rem;
+}
+
+.switch-text span{
+  color: #3B82F6;
+
+  cursor: pointer;
+
+  font-weight: 600;
+}
+
+/* ===================== */
+/* RESPONSIVE */
+/* ===================== */
+
+@media(max-width: 500px){
+
+  .auth-box{
+    padding: 35px 20px;
+  }
+
+  .auth-top h1{
+    font-size: 1.8rem;
+  }
+
+  .auth-form input{
+    height: 52px;
+  }
+
+  .auth-form button{
+    height: 52px;
+  }
+}

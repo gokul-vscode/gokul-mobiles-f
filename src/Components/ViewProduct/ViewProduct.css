@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#0F172A;
+  font-family:'Poppins',sans-serif;
+}
+
+.view-product-page{
+  width:100%;
+  min-height:100vh;
+  padding:50px 8%;
+  background:#0F172A;
+  color:white;
+}
+
+.view-product-container{
+  display:flex;
+  gap:50px;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.view-left{
+  flex:1;
+  min-width:300px;
+}
+
+.view-left img{
+  width:100%;
+  border-radius:25px;
+  object-fit:cover;
+  box-shadow:0 0 30px rgba(0,255,255,0.2);
+  transition:0.5s;
+}
+
+.view-left img:hover{
+  transform:scale(1.03);
+}
+
+.view-right{
+  flex:1;
+  min-width:300px;
+}
+
+.view-right h1{
+  font-size:3rem;
+  font-family:'Orbitron',sans-serif;
+  margin-bottom:15px;
+}
+
+.view-right h2{
+  color:#38BDF8;
+  margin-bottom:20px;
+}
+
+.view-rating{
+  display:flex;
+  gap:8px;
+  color:gold;
+  margin-bottom:20px;
+  font-size:1.2rem;
+}
+
+.view-right h3{
+  font-size:2rem;
+  margin-bottom:20px;
+  color:#00ffff;
+}
+
+.view-right p{
+  line-height:1.8;
+  color:#cbd5e1;
+  margin-bottom:30px;
+}
+
+.view-cart-btn{
+  padding:15px 35px;
+  border:none;
+  border-radius:50px;
+  background:linear-gradient(90deg,#06B6D4,#3B82F6);
+  color:white;
+  font-size:1rem;
+  font-weight:600;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  cursor:pointer;
+  transition:0.4s;
+}
+
+.view-cart-btn:hover{
+  transform:translateY(-5px);
+  box-shadow:0 10px 25px rgba(59,130,246,0.4);
+}
+
+@media(max-width:768px){
+
+  .view-right h1{
+    font-size:2rem;
+  }
+
+  .view-right h3{
+    font-size:1.5rem;
+  }
+
+}
+
+.image-preview-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 20px;
+}
+
+.preview-image{
+  width: 90%;
+  max-width: 700px;
+  border-radius: 20px;
+  object-fit: cover;
+  animation: zoomIn 0.4s ease;
+}
+
+.close-preview-btn{
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.view-left img{
+  cursor: zoom-in;
+}
+
+@keyframes zoomIn{
+
+  from{
+    transform: scale(0.7);
+    opacity: 0;
+  }
+
+  to{
+    transform: scale(1);
+    opacity: 1;
+  }
+
+}
