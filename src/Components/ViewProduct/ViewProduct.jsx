@@ -41,7 +41,7 @@ function ViewProduct() {
 
         const res = await axios.get(
 
-          `http://gokul-mobiles-b.onrender.com/api/products/${id}`
+          `https://gokul-mobiles-b.onrender.com/api/products/${id}`
 
         );
 

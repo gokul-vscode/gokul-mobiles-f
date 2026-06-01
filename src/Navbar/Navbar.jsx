@@ -58,7 +58,7 @@ function Navbar() {
       try {
 
         const res = await axios.get(
-          "http://gokul-mobiles-b.onrender.com/api/products"
+          "https://gokul-mobiles-b.onrender.com/api/products"
         );
 
         setProducts(res.data);
@@ -120,8 +120,7 @@ function Navbar() {
   };
 
 
-const user = JSON.parse(localStorage.getItem("user"));
-
+const user = JSON.parse(localStorage.getItem("user")) || {};
 
 
   return (
@@ -558,7 +557,7 @@ const user = JSON.parse(localStorage.getItem("user"));
 
         )
       }
-      <p className="user-name">Welcome <GiPolarStar /> <span className="username-color">"{user.name}"</span></p>
+      <p className="user-name">Welcome <GiPolarStar /> <span className="username-color"> "{user?.name || "Guest"}"</span></p>
 
     </>
 

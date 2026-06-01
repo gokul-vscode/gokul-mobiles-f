@@ -40,7 +40,7 @@ function Products() {
       try {
 
         const res = await axios.get(
-          "http://gokul-mobiles-b.onrender.com/api/products"
+          "https://gokul-mobiles-b.onrender.com/api/products"
         );
 
         setProductsData(res.data);
