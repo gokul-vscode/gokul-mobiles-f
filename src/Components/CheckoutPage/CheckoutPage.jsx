@@ -78,7 +78,7 @@ function CheckoutPage() {
 
       const res = await axios.post(
 
-        "http://localhost:5000/api/orders/create",
+        "http://gokul-mobiles-b.onrender.com/api/orders/create",
 
         {
 

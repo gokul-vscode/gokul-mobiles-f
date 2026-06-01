@@ -36,7 +36,7 @@ function Auth() {
 
         const res = await axios.post(
 
-          "http://localhost:5000/api/auth/login",
+          "http://gokul-mobiles-b.onrender.com/api/auth/login",
 
           {
             email,
@@ -71,7 +71,7 @@ function Auth() {
 
         const res = await axios.post(
 
-          "http://localhost:5000/api/auth/signup",
+          "http://gokul-mobiles-b.onrender.com/api/auth/signup",
 
           {
             name,
